@@ -28,7 +28,11 @@ programa {
         escolha(opcao){
           caso 1:
               limpa()
+<<<<<<< HEAD
               se(numCadastro <= 9){
+=======
+              se(numCadastro < 9){
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                 faca{
                   limpa()
                     escreva("Preencha as informações: \n")
@@ -59,9 +63,13 @@ programa {
                           escreva("\nOpção inválida!")
                         }
                       } enquanto(opcaoNav != 1 e opcaoNav != 2)
+<<<<<<< HEAD
                       se(opcaoNav == 2){
                         limpa()
                       }
+=======
+
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                     } senao{
                         escreva("\nNumero máximo de cadastros atingido.")
                         faca{
@@ -85,7 +93,11 @@ programa {
                   limpa()
                   escreva("Código | Descrição | Quantidade | Preço Custo | Total Estoque | Preço Venda\n")
                   para(inteiro i = 0; i < numCadastro; i++){
+<<<<<<< HEAD
                     escreva("\t", codProduto[i], "\t\t|\t\t", nomeProduto[i], "\t\t|\t\t", qntProduto[i], "\t\t|\t\t", Matematica.arredondar(precoProduto[i], 2), "\t\t|\t\t", Matematica.arredondar(totalEstoque[i], 2), "\t\t|\t\t", Matematica.arredondar(precoVenda[i], 2), "\n")
+=======
+                    escreva("\t", codProduto[i], "\t\t\t\t", nomeProduto[i], "\t\t\t\t", qntProduto[i], "\t\t\t\t", Matematica.arredondar(precoProduto[i], 2), "\t\t\t\t", Matematica.arredondar(totalEstoque[i], 2), "\t\t\t\t", Matematica.arredondar(precoVenda[i], 2), "\n")
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                   }
                   faca{
                     escreva("\n1 - Voltar ao menu\t\t2 - Encerrar\n")
@@ -95,7 +107,10 @@ programa {
                     }
                   } enquanto(opcaoNav != 1 e opcaoNav != 2)
                   se(opcaoNav == 2){
+<<<<<<< HEAD
                     escreva("\nEncerrando...\n\n")
+=======
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                     opcao = -1
                   } senao{
                     limpa()
@@ -111,7 +126,11 @@ programa {
                   limpa()
 
                   real maiorQnt = qntProduto[0], maiorPrecoCusto = precoProduto[0], maiorPrecoVenda = precoVenda[0], somaVenda = 0, somaCusto = 0, somaEstoque = 0
+<<<<<<< HEAD
                   inteiro iQnt = 0, iPrecoCusto = 0, iPrecoVenda = 0
+=======
+                  inteiro iQnt, iPrecoCusto, iPrecoVenda
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                   para(inteiro i = 0; i < numCadastro; i++){
                     somaEstoque+= qntProduto[i]
                     somaVenda+= precoVenda[i]
@@ -130,7 +149,11 @@ programa {
                     }
                   }
 
+<<<<<<< HEAD
                   real precoVendaMedio = somaVenda/(numCadastro), precoCustoMedio = somaCusto/(numCadastro)
+=======
+                  real precoVendaMedio = somaVenda/(numCadastro+1), precoCustoMedio = somaCusto/(numCadastro+1)
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
 
                   escreva("Indicadores: \n")
                   escreva("\nTotal produtos em estoque: ", somaEstoque)
@@ -145,7 +168,10 @@ programa {
                     leia(opcaoNav)
                   } enquanto(opcaoNav != 1 e opcaoNav != 2)
                   se(opcaoNav == 2){
+<<<<<<< HEAD
                     escreva("\nEncerrando...\n\n")
+=======
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                     opcao = -1
                   } senao{
                     limpa()
@@ -153,7 +179,11 @@ programa {
                 }
                 pare
 
+<<<<<<< HEAD
              caso contrario:
+=======
+             caso -1:
+>>>>>>> 45bf15fe37701a9cb7fd287f60ba53c18397e53d
                 escreva("\nEncerrando...\n\n")
                 opcao = -1
           }   
