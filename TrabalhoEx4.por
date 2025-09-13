@@ -38,7 +38,7 @@ programa {
   funcao inteiro preencherMatriz(inteiro v[][], inteiro linhas, inteiro colunas){
     para(inteiro i = 0; i < linhas; i++){
       para(inteiro j = 0;j < colunas; j++){
-        v[i][j]= Util.sorteia(0,2)
+        v[i][j]= Util.sorteia(0,10)
       }
     }
     retorne v
