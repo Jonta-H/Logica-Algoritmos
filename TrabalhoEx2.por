@@ -8,7 +8,9 @@ programa {
     escreva("Preencha o vetor 2: \n")
     y = preencherVetor(y,5)
 
-    escreva("Produto escalar: ", produtoEscalar(x,y,5))
+    escreva("\nVetor X: ", x)
+    escreva("\nVetor Y: ", y)
+    escreva("\nProduto escalar: ", produtoEscalar(x,y,5))
   }
 
 
