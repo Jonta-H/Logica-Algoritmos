@@ -5,14 +5,13 @@ programa {
 
     // Preenche a Matriz com os dados de cada aluno por vez
     para(inteiro i = 0; i < 5; i++){
-        inteiro j = 0
         escreva("Número de matrícula do ", i+1,"º aluno: ")
-        leia(matriz[i][j++])
+        leia(matriz[i][0])
         escreva("Média das provas [", i+1, "]: ")
-        leia(matriz[i][j++])
+        leia(matriz[i][1])
         escreva("Média dos trabalhos [", i+1, "]: ")
-        leia(matriz[i][j++])
-        matriz[i][j] = matriz[i][1]+matriz[i][2]
+        leia(matriz[i][2])
+        matriz[i][3] = matriz[i][1]+matriz[i][2]
         escreva("\n")
     }
 
