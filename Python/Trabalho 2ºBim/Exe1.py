@@ -1,4 +1,3 @@
-
 idade_cliente = int(input("Informe sua idade: "))
 valor_compra = float(input("Valor total da compra (R$): "))
 
